@@ -1,0 +1,13 @@
+footer {
+  height: 224px;
+  padding: 32px 16px;
+  margin-top: auto;
+  background-color: black;
+}
+
+.footer__logo {
+  img {
+    width: 108px;
+    height: 24px;
+  }
+}
