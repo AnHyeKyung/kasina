@@ -9,6 +9,7 @@ footer {
   }
   p,
   a {
+    font-size: 8px;
     color: white;
   }
   .footer__item1 {
@@ -24,10 +25,15 @@ footer {
 }
 
 .footer__item2 {
+  position: absolute;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  left: 700px;
+  gap: 80px;
+  letter-spacing: -0.8px;
+  line-height: 70%;
 }
 .test2 {
   position: absolute;
+  padding-top: 20px;
 }
