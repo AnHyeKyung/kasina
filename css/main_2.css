@@ -1,18 +1,65 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 15px;
+  position: fixed;
+}
+
 header {
   display: flex;
+  justify-content: center;
   align-items: center;
+  width: 1680px;
+  height: 48px;
+  border: 1px solid lightgrey;
+  background: white;
+  border-radius: 5px;
+}
+
+.gohome {
+  padding-left: 18px;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 100%;
 }
 
 .navbar {
   > ul {
+    padding-left: 30px;
     display: flex;
-    gap: 100px;
+    gap: 22px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
   }
 }
 
 .ico_bar {
   width: auto;
+  height: 21px;
   margin-left: auto;
-  padding-right: 10px;
-  order: 3;
+  padding-right: 30px;
+  margin-top: -5px;
+  display: flex;
+  align-items: center;
+
+  > a {
+    display: block;
+    width: 20px;
+    height: 21px;
+    margin-left: 22px;
+    position: relative;
+
+    .wish_num {
+      font-size: 10px;
+      position: absolute;
+      left: 8.5px;
+      top: 15px;
+      transform: translate(-50%, -50%);
+      color: #fff;
+    }
+  }
 }
