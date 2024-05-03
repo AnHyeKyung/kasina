@@ -1,0 +1,144 @@
+.preview {
+  width: 100%;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 15px;
+  position: fixed;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1658.67px;
+  height: 48px;
+  border: 1px solid lightgrey;
+  background: white;
+  border-radius: 5px;
+  padding: 0 16px;
+}
+
+.gohome {
+  padding-left: 18px;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  line-height: 100%;
+}
+
+.navbar {
+  > ul {
+    padding-left: 20px;
+    display: flex;
+    gap: 22px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+  }
+}
+
+.ico_bar {
+  width: auto;
+  height: 21px;
+  margin-left: auto;
+  padding-right: 20px;
+  margin-top: -5px;
+  display: flex;
+  align-items: center;
+
+  > a {
+    display: block;
+    width: 20px;
+    height: 21px;
+    margin-left: 22px;
+    position: relative;
+
+    > img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .wish_num {
+      font-size: 10px;
+      position: absolute;
+      left: 10px;
+      top: 15px;
+      transform: translate(-50%, -50%);
+      color: #fff;
+    }
+  }
+}
+.depth1 {
+  position: relative;
+  z-index: 1001;
+  display: flex;
+  gap: 100px;
+  &:hover {
+    .depth2 {
+      display: block;
+      padding-top: 20px;
+      opacity: 1;
+      height: auto;
+      overflow: visible;
+    }
+  }
+  > li {
+    position: relative;
+    > a {
+      display: block;
+      padding: 32px 0;
+      font-size: 18px;
+      font-weight: 700;
+      position: relative;
+      color: var(--white);
+      font-size: 18px;
+      font-weight: 700;
+      transition: 0.5s;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        width: 0%;
+        height: 7px;
+        background-color: var(--blue);
+        transition: 0.5s;
+      }
+    }
+    &:hover {
+      > a {
+        color: var(--blue);
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.depth2 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 20px;
+  opacity: 0;
+  transition: 0.3s;
+  height: 0;
+  overflow: hidden;
+  a {
+    color: var(--gray66, #666);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 200%;
+    letter-spacing: -0.8px;
+    white-space: nowrap;
+    &:hover {
+      color: var(--blue);
+      text-decoration: underline;
+    }
+  }
+}
