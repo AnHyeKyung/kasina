@@ -1,3 +1,7 @@
+.preview {
+  width: 100%;
+}
+
 .wrap {
   display: flex;
   justify-content: center;
@@ -11,24 +15,25 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1680px;
+  width: 1658.67px;
   height: 48px;
   border: 1px solid lightgrey;
   background: white;
   border-radius: 5px;
+  padding: 0 16px;
 }
 
 .gohome {
   padding-left: 18px;
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: -2px;
   line-height: 100%;
 }
 
 .navbar {
   > ul {
-    padding-left: 30px;
+    padding-left: 20px;
     display: flex;
     gap: 22px;
     font-size: 12px;
@@ -41,7 +46,7 @@ header {
   width: auto;
   height: 21px;
   margin-left: auto;
-  padding-right: 30px;
+  padding-right: 20px;
   margin-top: -5px;
   display: flex;
   align-items: center;
@@ -53,10 +58,15 @@ header {
     margin-left: 22px;
     position: relative;
 
+    > img {
+      width: 20px;
+      height: 20px;
+    }
+
     .wish_num {
       font-size: 10px;
       position: absolute;
-      left: 8.5px;
+      left: 10px;
       top: 15px;
       transform: translate(-50%, -50%);
       color: #fff;
