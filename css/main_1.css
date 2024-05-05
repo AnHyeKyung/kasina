@@ -53,17 +53,13 @@ body {
 }
 .roa_2 {
   position: relative;
-  img{
-    width: 500px;
-    height: 500px;
-  }
   .item__badge2{
     position: absolute;
     display: flex;
-    top: 450px;
-    left: 162px;
+    top: 430px;
+    left: 180px;
     width: 150px;
-    height: 35px;
+    height: 30px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -76,7 +72,7 @@ body {
     width: 100%;
     text-align: center;
     position: absolute;
-    top: 500px;
+    top: 480px;
     font-weight: 700;
   }
 }
@@ -118,6 +114,14 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 500px);
+  .roa_2 {
+    img{
+      width: 500px;
+      height: 500px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
   .roa_1,
   .kompakt_1 {
     grid-row: 1 / 3;

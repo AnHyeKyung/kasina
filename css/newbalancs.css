@@ -22,11 +22,99 @@
         object-fit: cover;
     }
 }}
-.wrap{
+.wrap {
+    margin: 0 auto;
+    display: flex;
+    width: 1024px;
+}
+.text_area {
+ margin: 50px;
+ width: 100%;
+}
+.badge {
+    border: 1px solid #757575;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 120px;
+    height: 30px;
+}
+.bold {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.membership {
+    margin-top: 20px;
     position: relative;
-    right {
+    > img {
+
+        background-image: url(https://static.kasina-store.com/ui-static/img/ico_member.svg);
+        background-repeat: no-repeat;
+    }
+    a{
         position: absolute;
-        width: 100%;
-        right: 10px;
+        left: 20px;
+    }
+    p{
+        font-weight: 700;
     }
 }
+.grid_size {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 5px;
+    margin-top: 10px;
+    .grid_size_item{
+        border: 1px solid lightgray;
+        border-radius: 4px;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        &:hover{
+            border: 1px solid black;
+        }
+    }
+}
+.grid_cart {
+    display: grid;
+    grid-template-columns: repeat( 2, 205px );
+    gap: 5px;
+    margin-top: 10px;
+    align-items: center;
+    .grid_cart_item1{
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 4px;
+        text-align: center;
+        &:hover {
+            border: 1px solid lightgray;
+        }
+    }
+    .grid_cart_item2{
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 4px;
+        text-align: center;
+        background-color: black;
+        color: #fff;
+        &:hover {
+            border: 1px solid gray;
+            background-color: gray;
+        }
+    }
+}
+.dot li{
+    font-weight: 700;
+    margin-top: 20px;
+    ::before{
+            content: "";
+                top: 7px;
+                border-radius: 1px;
+                width: 4px;
+                height: 4px;
+                background-color: #555;
+                position: absolute;
+                display: block;
+        }
+}
+
