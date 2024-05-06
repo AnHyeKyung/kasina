@@ -1,9 +1,10 @@
 .wrap {
     margin: 0 auto;
     display: flex;
-    width: 1024px;
+    width: 1920px;
 }
 .pictures {
+    margin-left: 127px;
     display: grid;
     grid-template-columns: repeat(2, 200px);
     width: 50vw;
@@ -30,8 +31,7 @@
 }}
 .text_area {
     margin-top: 50px;
- margin-left: 500px;
- width: 100%;
+    width: 30%;
 }
 .badge {
     border: 1px solid #757575;
