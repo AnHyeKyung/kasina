@@ -24,7 +24,6 @@
 
 .login-type {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 480px;
   margin-top: 16px;
@@ -38,9 +37,11 @@
   }
   > a {
     > img {
-      padding-right: 20px;
       width: 18px;
       height: 18px;
+      .info-circle {
+        left: 0;
+      }
     }
   }
   ::placeholder {
@@ -49,6 +50,36 @@
     letter-spacing: 0.02em;
     line-height: 48px;
   }
+  .info-box {
+    border-radius: 4px;
+    position: absolute;
+    width: 240px;
+    height: 148px;
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    white-space: normal;
+    word-break: keep-all;
+    background: rgba(51, 51, 51, 0.88);
+    box-sizing: border-box;
+    z-index: 10;
+    margin-top: 180px;
+    right: 613px;
+    padding: 12px;
+    font-size: 13px;
+  }
+}
+
+#check-btn {
+  display: none;
+}
+#check-btn:checked ~ .info-box {
+  display: block;
+}
+.info-box {
+  display: none;
 }
 
 .login_btn1 {
@@ -75,6 +106,7 @@
   > a {
     padding-left: 15px;
     text-decoration: underline;
+    text-underline-offset: 4px;
     letter-spacing: 0.02em;
     line-height: 48px;
   }
