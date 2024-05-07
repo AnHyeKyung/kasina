@@ -1,3 +1,12 @@
+header {
+}
+
+.header_1 {
+  margin-left: 15px;
+  margin-top: 15px;
+  position: fixed;
+}
+
 .preview {
   width: 100%;
 }
@@ -7,11 +16,10 @@
   justify-content: center;
   width: 100%;
   margin: 0 auto;
-  margin-top: 15px;
-  position: fixed;
+  align-items: center;
 }
 
-header {
+.header_navbar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +28,6 @@ header {
   border: 1px solid lightgrey;
   background: white;
   border-radius: 5px;
-  padding: 0 16px;
 }
 
 .gohome {
@@ -32,6 +39,9 @@ header {
 }
 
 .navbar {
+  a:hover {
+    text-decoration: underline;
+  }
   > ul {
     padding-left: 20px;
     display: flex;
@@ -72,4 +82,66 @@ header {
       color: #fff;
     }
   }
+}
+
+.pop-up_1 {
+  margin-top: 5px;
+  width: 1658.67px;
+  height: 260px;
+  border: 1px solid lightgrey;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.navbar_footwear:hover + .pop-up_1 {
+  display: block;
+}
+
+.pop-up_depth {
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+.pop-up_menu {
+  > p {
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+    margin-top: 18px;
+  }
+}
+
+.pop-up_li {
+  margin-left: 150px;
+  margin-top: 18px;
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.pop-up_pic {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 13px;
+  top: 55px;
+  > a {
+    padding-top: 10px;
+    img {
+      width: 220px;
+      height: 220px;
+      border-radius: 5px;
+    }
+    .header_thumb_txt {
+      margin-top: 5px;
+    }
+  }
+}
+
+.header_thumb_txt {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
 }
