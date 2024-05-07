@@ -15,9 +15,9 @@ body {
 }
 
 .grid__best {
-  img{
+  img {
     width: 475px;
-    height: 700px;
+    height: 650px;
   }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -26,53 +26,55 @@ body {
     background-color: var(--back);
   }
 }
-.best__item{
+.best__item {
   position: relative;
   .item__badge {
     position: absolute;
     display: flex;
-    top: 580px;
+    top: 520px;
     left: 165px;
     width: 150px;
     height: 35px;
     align-items: center;
     justify-content: center;
     text-align: center;
-      border: 1px solid #757575;
-      border-radius: 4px;
-      font-weight: 700;
+    border: 1px solid #757575;
+    border-radius: 4px;
+    font-weight: 700;
   }
   .item__badge__name {
     left: 0;
     width: 100%;
     text-align: center;
     position: absolute;
-    top: 625px;
+    top: 570px;
     font-weight: 700;
   }
 }
 .roa_2 {
   position: relative;
-  .item__badge2{
+  button {
+  }
+  .item__badge2 {
     position: absolute;
     display: flex;
-    top: 430px;
+    top: 400px;
     left: 180px;
     width: 150px;
     height: 30px;
     align-items: center;
     justify-content: center;
     text-align: center;
-      border: 1px solid #757575;
-      border-radius: 4px;
-      font-weight: 700;
+    border: 1px solid #757575;
+    border-radius: 4px;
+    font-weight: 700;
   }
-  .item__badge__name2{
+  .item__badge__name2 {
     left: 0;
     width: 100%;
     text-align: center;
     position: absolute;
-    top: 480px;
+    top: 440px;
     font-weight: 700;
   }
 }
@@ -114,9 +116,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   .roa_2 {
-    img{
-      align-items: start;
-      justify-items: start;
+    img {
       width: 500px;
       height: 500px;
     }
@@ -131,7 +131,7 @@ body {
   }
   .roa_1 {
     position: relative;
-    .roa_item1{
+    .roa_item1 {
       position: absolute;
       top: 900px;
       left: 20px;
@@ -156,7 +156,7 @@ body {
     img {
       object-fit: cover;
     }
-    .wave_item{
+    .wave_item {
       color: #fff;
     }
   }
@@ -195,31 +195,60 @@ body {
     position: relative;
   }
 }
-  .featured__li{
-    position: relative;
-    .item__badge3 {
-      position: absolute;
-      display: flex;
-      margin-top: 10px;
-      top: 450px;
-      left: 0x;
-      width: 100px;
-      height: 35px;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-        border: 1px solid #757575;
-        border-radius: 4px;
-        font-weight: 400;
-    }
-    .item__badge__name3{
-      position: absolute;
-      left: 0;
-      height: 500px;
-      top: 550px;
-      text-align: center;
-      position: absolute;
-      top: 500px;
-      font-weight: 400;
-    }
+.featured__li {
+  position: relative;
+  .item__badge3 {
+    position: absolute;
+    display: flex;
+    margin-top: 10px;
+    top: 450px;
+    left: 0x;
+    width: 100px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #757575;
+    border-radius: 4px;
+    font-weight: 400;
   }
+  .item__badge__name3 {
+    position: absolute;
+    left: 0;
+    height: 500px;
+    top: 550px;
+    text-align: center;
+    position: absolute;
+    top: 500px;
+    font-weight: 400;
+  }
+}
+.kompakt_2 {
+  position: relative;
+  button {
+    border: 1px solid black;
+    background-color: #fff;
+  }
+  .item__badge3 {
+    position: absolute;
+    display: flex;
+    top: 450px;
+    left: 180px;
+    width: 115px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #757575;
+    border-radius: 4px;
+    font-weight: 700;
+  }
+  .item__badge__name3 {
+    left: 0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 480px;
+    font-weight: 700;
+  }
+}
