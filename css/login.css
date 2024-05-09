@@ -1,0 +1,287 @@
+header {
+}
+
+.header_1 {
+  margin-left: 15px;
+  margin-top: 15px;
+  position: fixed;
+}
+
+.preview {
+  width: 100%;
+}
+
+.header_wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.header_navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1658.67px;
+  height: 48px;
+  border: 1px solid lightgrey;
+  background: white;
+  border-radius: 5px;
+}
+
+.gohome {
+  padding-left: 18px;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  line-height: 100%;
+}
+
+.navbar {
+  a:hover {
+    text-decoration: underline;
+  }
+  > ul {
+    padding-left: 20px;
+    display: flex;
+    gap: 22px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+  }
+}
+
+.ico_bar {
+  width: auto;
+  height: 21px;
+  margin-left: auto;
+  padding-right: 20px;
+  margin-top: -5px;
+  display: flex;
+  align-items: center;
+
+  > a {
+    display: block;
+    width: 20px;
+    height: 21px;
+    margin-left: 22px;
+    position: relative;
+
+    > img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .wish_num {
+      font-size: 10px;
+      position: absolute;
+      left: 10px;
+      top: 15px;
+      transform: translate(-50%, -50%);
+      color: #fff;
+    }
+  }
+}
+
+.pop-up_1 {
+  margin-top: 5px;
+  width: 1658.67px;
+  height: 260px;
+  border: 1px solid lightgrey;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.navbar_footwear:hover + .pop-up_1 {
+  display: block;
+}
+
+.pop-up_depth {
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+.pop-up_menu {
+  > p {
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+    margin-top: 18px;
+  }
+}
+
+.pop-up_li {
+  margin-left: 150px;
+  margin-top: 18px;
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.pop-up_pic {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 13px;
+  top: 55px;
+  > a {
+    padding-top: 10px;
+    img {
+      width: 220px;
+      height: 220px;
+      border-radius: 5px;
+    }
+    .header_thumb_txt {
+      margin-top: 5px;
+    }
+  }
+}
+
+.header_thumb_txt {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+.login_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  width: 480px;
+}
+
+.login-title {
+  margin-top: 30px;
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.72px;
+  > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.login-type {
+  display: flex;
+  align-items: center;
+  width: 480px;
+  margin-top: 16px;
+  height: 50px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  > input {
+    width: 430px;
+    padding-left: 20px;
+    outline: none;
+  }
+  > a {
+    > img {
+      width: 18px;
+      height: 18px;
+      .info-circle {
+        left: 0;
+      }
+    }
+  }
+  ::placeholder {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 48px;
+  }
+  .info-box {
+    border-radius: 4px;
+    position: absolute;
+    width: 240px;
+    height: 148px;
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    white-space: normal;
+    word-break: keep-all;
+    background: rgba(51, 51, 51, 0.88);
+    box-sizing: border-box;
+    z-index: 10;
+    margin-top: 180px;
+    right: 613px;
+    padding: 12px;
+    font-size: 13px;
+  }
+}
+
+#check-btn {
+  display: none;
+}
+#check-btn:checked ~ .info-box {
+  display: block;
+}
+.info-box {
+  display: none;
+}
+
+.login_btn1 {
+  > button {
+    color: #959595;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 16px;
+    border: 1px solid #dcdcdc;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    width: 480px;
+    height: 48px;
+    letter-spacing: 0.02em;
+    line-height: 48px;
+  }
+}
+
+.login_set {
+  display: flex;
+  justify-content: end;
+  font-size: 13px;
+  font-weight: 500;
+  > a {
+    padding-left: 15px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    letter-spacing: 0.02em;
+    line-height: 48px;
+  }
+}
+
+.login_btn2 {
+  margin-top: 20px;
+  > button {
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 16px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    width: 480px;
+    height: 48px;
+    background-color: #fff;
+    letter-spacing: 0.02em;
+    line-height: 48px;
+  }
+}
+
+.login_info {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  margin-top: 5px;
+  color: #2e54bb;
+  letter-spacing: 0.02em;
+  line-height: 48px;
+}
