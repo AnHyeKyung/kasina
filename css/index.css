@@ -10,12 +10,9 @@ body {
   margin: 10px;
 }
 .main {
-  width: 1920px;
+  width: 1800px;
   margin: 0 auto;
 }
-header {
-}
-
 .header_1 {
   margin-left: 15px;
   margin-top: 15px;
@@ -29,14 +26,12 @@ header {
 .header_wrap {
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin: 0 auto;
+  width: calc(100% - 20px);
   align-items: center;
   border: 1px solid lightgrey;
   background: white;
   border-radius: 5px;
   margin: 10px;
-  width: 1880px;
   height: 48px;
 }
 
@@ -161,11 +156,11 @@ header {
   font-weight: 600;
   color: #333;
 }
-
 .grid__best {
   img {
-    width: 475px;
-    height: 650px;
+    width: 100%;
+    aspect-ratio: 1 / 1.368;
+    object-fit: contain;
   }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -179,14 +174,11 @@ header {
   .item__badge {
     position: absolute;
     display: flex;
-    top: 520px;
-    left: 165px;
+    top: 500px;
+    left: 150px;
     width: 150px;
     height: 35px;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    border: 1px solid #757575;
     border-radius: 4px;
     font-weight: 700;
   }
@@ -195,9 +187,14 @@ header {
     width: 100%;
     text-align: center;
     position: absolute;
-    top: 570px;
+    top: 550px;
     font-weight: 700;
   }
+}
+.item__badge {
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #757575;
 }
 .roa_2 {
   position: relative;
@@ -230,8 +227,9 @@ header {
   grid-template-columns: repeat(4, 1fr);
   gap: 3px;
   img {
-    width: 475px;
-    height: 475px;
+    width: 100%;
+    aspect-ratio: 1 / 1.368;
+    object-fit: contain;
   }
   p {
     font-weight: 500;
@@ -343,26 +341,21 @@ header {
   }
 }
 .featured__li {
+  position: relative;
   .item__badge3 {
-    display: flex;
+    position: absolute;
     margin-top: 10px;
-    top: 450px;
-    left: 0x;
-    width: 100px;
-    height: 35px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 1px solid #757575;
-    border-radius: 4px;
-    font-weight: 400;
-  }
-  .item__badge__name3 {
-    font-weight: 700;
   }
 }
 .kompakt_2 {
   position: relative;
+  .absol {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    bottom: 40px;
+  }
   button {
     border: 1px solid black;
     background-color: #fff;
@@ -380,6 +373,17 @@ header {
     border-radius: 4px;
     font-weight: 700;
   }
+}
+.item__badge4 {
+  margin-top: 5px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  text-align: center;
+  width: 100px;
+  font-size: 11px;
+}
+.item__badge__name4 {
+  font-size: 15px;
 }
 
 footer {
@@ -416,7 +420,6 @@ footer {
   letter-spacing: -0.8px;
   line-height: 70%;
 }
-
 .login_wrap {
   display: flex;
   justify-content: center;
@@ -450,6 +453,8 @@ footer {
   height: 50px;
   border: 1px solid #dcdcdc;
   border-radius: 4px;
+  position: relative;
+
   > input {
     width: 430px;
     padding-left: 20px;
@@ -473,8 +478,11 @@ footer {
   .info-box {
     border-radius: 4px;
     position: absolute;
-    width: 240px;
-    height: 148px;
+    min-width: 240px;
+    max-width: 400px;
+    min-height: 54px;
+    top: 40px;
+    right: 20px;
     font-weight: 400;
     font-size: 13px;
     color: #fff;
@@ -485,8 +493,6 @@ footer {
     background: rgba(51, 51, 51, 0.88);
     box-sizing: border-box;
     z-index: 10;
-    margin-top: 180px;
-    right: 613px;
     padding: 12px;
     font-size: 13px;
   }
@@ -523,8 +529,8 @@ footer {
   justify-content: end;
   font-size: 13px;
   font-weight: 500;
+  gap: 15px;
   > a {
-    padding-left: 15px;
     text-decoration: underline;
     text-underline-offset: 4px;
     letter-spacing: 0.02em;
@@ -534,18 +540,18 @@ footer {
 
 .login_btn2 {
   margin-top: 20px;
-  > button {
-    font-size: 13px;
-    font-weight: 500;
-    margin-top: 16px;
-    border-radius: 4px;
-    border: 1px solid #000;
-    width: 480px;
-    height: 48px;
-    background-color: #fff;
-    letter-spacing: 0.02em;
-    line-height: 48px;
-  }
+  width: 480px;
+  height: 48px;
+  border-radius: 4px;
+  border: 1px solid #000;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 48px;
 }
 
 .login_info {

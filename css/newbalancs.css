@@ -209,14 +209,15 @@
 }
 .grid_size {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
+  grid-template-columns: repeat(4, 1fr);
   gap: 5px;
   margin-top: 10px;
   .grid_size_item {
+    background-color: #fff;
     border: 1px solid lightgray;
     border-radius: 4px;
-    width: 100px;
     height: 30px;
+    font-size: 1rem;
     text-align: center;
     &:hover {
       border: 1px solid black;
@@ -225,7 +226,7 @@
 }
 .grid_cart {
   display: grid;
-  grid-template-columns: repeat(2, 205px);
+  grid-template-columns: repeat(2, 1fr);
   gap: 5px;
   margin-top: 10px;
   align-items: center;
@@ -256,17 +257,28 @@
     }
   }
 }
+.description {
+  margin-top: 20px;
+  font-weight: 700;
+}
+.des2012 {
+  margin-top: 20px;
+  text-align: justify;
+}
 .dot li {
+  position: relative;
   font-weight: 700;
   margin-top: 20px;
-  ::before {
+  margin-left: 10px;
+  &::before {
+    position: absolute;
+    left: -10px;
     content: "";
-    top: 7px;
+    top: 10px;
     border-radius: 1px;
     width: 4px;
     height: 4px;
     background-color: #555;
-    position: absolute;
     display: block;
   }
 }
@@ -274,11 +286,11 @@
   position: relative;
   width: 100%;
   height: 50px;
-  background-color: #f4f4f4;
   margin-top: 10px;
   line-height: 50px;
   font-weight: 700;
   padding-left: 20px;
+  background-color: #f4f4f4;
   a {
     width: 500px;
     height: 50px;
