@@ -384,11 +384,16 @@ header {
 }
 
 footer {
+  margin-top: 100px;
   display: flex;
   justify-content: space-between;
   padding: 32px 16px;
-  margin-top: auto;
+  padding-right: 300px;
   background-color: black;
+  li {
+    font-size: 12px;
+    line-height: 20px;
+  }
   img {
     width: 108px;
     height: 24px;
